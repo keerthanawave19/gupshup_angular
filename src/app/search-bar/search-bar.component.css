@@ -1,0 +1,19 @@
+
+md-toolbar {
+	display: flex;
+}
+
+button{
+	margin-left: 20px;
+}
+
+md-input-container{
+	margin-left: 300px;
+}
+input::-webkit-input-placeholder {
+color: white !important;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
