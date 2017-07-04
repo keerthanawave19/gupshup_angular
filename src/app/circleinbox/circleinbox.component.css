@@ -1,0 +1,29 @@
+h1{
+	font-size: 20px;
+	text-align: left;
+	text-transform: uppercase;
+	
+}
+button
+{
+	display: inline;
+	margin-left: 20px;
+	border-radius: 12px;
+	margin-bottom: 5px;
+}
+#username{
+	font-size: 20px;
+	text-transform: uppercase;
+}
+#post{
+	 background-color:green;
+}
+#memberlist{
+	background-color: red;
+}
+#circleroot{
+	background-color: pink;
+}
+#mailbox{
+	background-color: grey;
+}
