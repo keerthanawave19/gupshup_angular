@@ -7,24 +7,25 @@ import { UserInboxComponent } from './userinbox/userinbox.component';
 import { CreateCircle } from './createcircle/createcircle.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import {PostComponent} from './post/post.component';
-import { ChatboxComponent } from './chatbox/chatbox.component';
+import { ChatBoxComponent } from './chatbox/chatbox.component';
 import { MaterialModule } from '@angular/material';
-
+import { MessageComponent } from './message/message.component'
 
 const routes:Routes=[{path:'',component: UserInboxComponent},
 {path:'circleinbox',component: CircleInboxComponent},
-{path:'circlememberinbox/:member',component: ChatboxComponent},
  {path:'createcircle',component: CreateCircle},
- {path:'circleinbox/:circle',component: CircleInboxComponent}
+ {path:'circleinbox/:circle',component: CircleInboxComponent},
+ {path:'chatbox/:name',component: ChatBoxComponent}
 ];
 
 @NgModule({
 	declarations: [
 	CircleInboxComponent,
-     ChatboxComponent,
+     ChatBoxComponent,
      CreateCircle,
      UserInboxComponent,
-     PostComponent
+     PostComponent,
+     MessageComponent
 
 	],
     

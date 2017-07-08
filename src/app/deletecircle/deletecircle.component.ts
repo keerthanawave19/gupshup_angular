@@ -7,7 +7,7 @@ import { CircleService } from '../service/circle.service';
 import { FormControl, FormGroup,FormBuilder } from '@angular/forms';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @Component({
-  selector: 'deletecircle',
+  selector: 'editcircle',
   templateUrl: './deletecircle.component.html',
   styleUrls: ['./deletecircle.component.css'],
 })
@@ -17,7 +17,7 @@ export class DeleteCircleComponent {
 
 
  
-  deletecircleform:FormGroup;
+  editcircleform:FormGroup;
 cirName:string;
 key:string[];
 obj:Circle;
@@ -30,16 +30,16 @@ circle:Circle;
    @Inject(MD_DIALOG_DATA) public data: any) {
 
     console.log('data', this.data.Circle);
-    this.deleteForm();
+    this.editForm();
   }     
 
  
   
  
 
-deleteForm()
+editForm()
 { 
-  this.deletecircleform=this.fb.group({
+  this.editcircleform=this.fb.group({
    keywords:this.data.Keywords,
    description:this.data.Description,
    Circle:this.data.Circle
@@ -54,7 +54,7 @@ deleteForm()
   }
 
   deleteCircle(): Circle {
-    const formModel = this.deletecircleform.value;
+    const formModel = this.editcircleform.value;
 
      const saveCircle: Circle = {
       

@@ -38,17 +38,14 @@ constructor(
     		 this.circleservice.getCircleinbox(param['circle'])
     	).subscribe((Circleinbox) => {
     			this.myinbox = Circleinbox;
-    		 this.circleservice.getcircleKeywords(this.myinbox).subscribe((keywords)=>this.keywords=keywords);
+    		 });
+      this.circleservice.getcircleKeywords(this.myinbox).subscribe((keywords)=>this.keywords=keywords);
          this.circleservice.getcircleDescription(this.myinbox).subscribe((description)=>this.description=description);
-         
-    	});
+         }
 
- }
-
-  
- Members() {
+  Members() {
     
-    this.circleservice.getMember(this.myinbox).subscribe((mem) => {
+      this.circleservice.getMember(this.myinbox).subscribe((mem) => {
       this.members = mem;
      });
     
@@ -56,9 +53,7 @@ constructor(
    
 
   openDialog() {
-     
- 
-      this.dialog.open(EditCircleComponent, {
+     this.dialog.open(EditCircleComponent, {
          data: {
                Keywords: this.keywords,
                Description:this.description,
@@ -69,9 +64,7 @@ constructor(
       
     }
     deleteCircle() {
-     
- 
-      this.dialog.open(DeleteCircleComponent, {
+     this.dialog.open(DeleteCircleComponent, {
          data: {
                Keywords: this.keywords,
                Description:this.description,

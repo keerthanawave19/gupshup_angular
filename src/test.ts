@@ -13,14 +13,9 @@ import {
 } from '@angular/platform-browser-dynamic/testing';
 
 // Unfortunately there's no typing for the `__karma__` variable. Just declare it as any.
-<<<<<<< HEAD
-declare const __karma__: any;
-declare const require: any;
-=======
+
 declare var __karma__: any;
 declare var require: any;
->>>>>>> 8b8fc8855e9124aae9707ee7f7ff9d26e4145c6b
-
 // Prevent Karma from running prematurely.
 __karma__.loaded = function () {};
 

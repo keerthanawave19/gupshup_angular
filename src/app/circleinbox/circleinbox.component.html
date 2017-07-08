@@ -1,29 +1,23 @@
-<!-- 
-<md-grid-list cols="6" rowHeight="1:1">
-  <md-grid-tile cols="6" rowspan="1" id="circleroot">
-    <h1>{{myinbox}} inbox</h1>
-    <button md-raised-button (click)=Members()>Show {{myinbox}} Members</button>
- <button md-raised-button (click)=openDialog() >Edit {{myinbox}}</button>
- <button md-raised-button (click)=deleteCircle()>Delete {{myinbox}}</button>
+<md-grid-list cols="4" rowHeight="1:1">
+  <md-grid-tile colspan="3" rowspan="1" id="circleroot">
+    <h2 class="header">{{myinbox}} inbox</h2>
+   
+ <button class="btn"(click)=openDialog() >Edit Circle</button>
+ <button class="btn" (click)=deleteCircle()>Delete Circle</button>
   </md-grid-tile>
-   <md-grid-tile colspan="4" rowspan="4" id="mailbox">
-
-</md-grid-tile>
-   <md-grid-tile colspan="2" rowspan="5" id="memberlist">
-     <div *ngIf="members">
+   <md-grid-tile colspan="1" rowspan="2" id="memberlist">
+    <!--  <div *ngIf="members">
  <div *ngFor="let a of members">
-    <button md-raised-button (click)=memberDetail()>{{a.memberName}}</button>
- </div>
-</div>
+
+   <button md-raised-button> {{a.memberName}}</button>
+ </div> -->
+<!-- </div> -->
   </md-grid-tile>
-
-  <md-grid-tile colspan="4" rowspan="1" id="post">
-  		<p>hiiiiiii</p>
-<post></post>  -->
-<!--  </md-grid-tile>
-
+  <md-grid-tile colspan="4" rowspan="1" id="memberlist">
+      
+  </md-grid-tile>
+  <!-- <md-grid-tile colspan="4" id="post">
+    <post>md-raised-button </post>
+  </md-grid-tile> -->
 </md-grid-list>
-
- --> 
-<md-grid-list>
-</md-grid-list>
+<post></post>

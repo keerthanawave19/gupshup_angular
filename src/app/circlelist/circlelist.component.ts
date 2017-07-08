@@ -28,8 +28,6 @@ export class CircleListComponent {
       this.router.navigate(['circleinbox',circle]);
     }
 
-    
-
     openDialog() {
       let dialogRef = this.dialog.open(CreateCircle);
       dialogRef.afterClosed().subscribe(result => {
